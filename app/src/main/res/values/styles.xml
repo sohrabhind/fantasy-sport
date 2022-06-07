@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="BrowserActivityTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColorHighlight">@color/color_button</item>
+        <item name="android:windowBackground">@drawable/wall</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@color/status_bar</item>
+        <item name="fontFamily">@font/futuraopti</item>
+    </style>
+
+    <style name="TabTextStyle" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="textAllCaps">true</item>
+        <item name="fontFamily">@font/futuraopti</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

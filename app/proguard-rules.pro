@@ -1,0 +1,12 @@
+-keep class com.google.android.gms.common.api.GoogleApiClient { public *; }
+-keep class com.google.android.gms.common.api.GoogleApiClient$* {public *;}
+-keep class com.google.android.gms.location.LocationServices {public *;}
+-keep class com.google.android.gms.location.FusedLocationProviderApi {public *;}
+-keep class com.google.android.gms.location.ActivityRecognition {public *;}
+-keep class com.google.android.gms.location.ActivityRecognitionApi {public *;}
+-keep class com.google.android.gms.location.ActivityRecognitionResult {public *;}
+-keep class com.google.android.gms.location.DetectedActivity {public *;}
+-keep class com.google.android.gms.ads.identifier.AdvertisingIdClient{public *;}
+-keep class com.google.android.gms.ads.identifier.AdvertisingIdClient$Info{public *;}
+-dontwarn com.google.android.gms.**
+-dontwarn com.squareup.picasso.**

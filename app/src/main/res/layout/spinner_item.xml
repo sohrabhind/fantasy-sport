@@ -1,0 +1,12 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingLeft="@dimen/news_image_margin_top"
+    android:paddingRight="@dimen/news_image_margin_top"
+    android:textColor="#464646"
+    android:textStyle="bold"
+    android:textSize="15sp"
+    android:maxLines="1"
+    android:gravity="center|start"
+    android:background="@drawable/item_back_list"/>

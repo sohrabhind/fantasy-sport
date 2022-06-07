@@ -1,0 +1,16 @@
+<com.hindbyte.redfun.library.SwipyRefreshLayout
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srl_direction="both"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</com.hindbyte.redfun.library.SwipyRefreshLayout>

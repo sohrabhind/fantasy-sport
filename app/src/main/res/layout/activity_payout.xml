@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/news_inside_item_margin"
+    android:onClick="hideKeyboard"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/textIntro"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/textIntro"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/accountNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/edit_text_back"
+            android:hint="Account Number"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="number"
+            android:imeOptions="flagNoExtractUi"
+            android:textCursorDrawable="@color/color_edit_text"
+            android:singleLine="true"
+            android:textColor="@color/color_edit_text"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/verifyAccountNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/edit_text_back"
+            android:hint="Verify Account Number"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="number"
+            android:imeOptions="flagNoExtractUi"
+            android:textCursorDrawable="@color/color_edit_text"
+            android:singleLine="true"
+            android:textColor="@color/color_edit_text"
+            android:textColorHint="@color/white" />
+
+
+        <EditText
+            android:id="@+id/ifscCode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/edit_text_back"
+            android:hint="IFSC"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="textVisiblePassword"
+            android:imeOptions="flagNoExtractUi"
+            android:textCursorDrawable="@color/color_edit_text"
+            android:singleLine="true"
+            android:textColor="@color/color_edit_text"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/upiId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/edit_text_back"
+            android:hint="UPI"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="textVisiblePassword"
+            android:imeOptions="flagNoExtractUi"
+            android:textCursorDrawable="@color/color_edit_text"
+            android:singleLine="true"
+            android:textColor="@color/color_edit_text"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/withDrawAmount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/edit_text_back"
+            android:hint="Amount"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="number"
+            android:imeOptions="flagNoExtractUi"
+            android:textCursorDrawable="@color/color_edit_text"
+            android:singleLine="true"
+            android:textColor="@color/color_edit_text"
+            android:textColorHint="@color/white" />
+
+        <Button
+            android:id="@+id/withDrawButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/item_back_list"
+            android:text="Withdraw"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

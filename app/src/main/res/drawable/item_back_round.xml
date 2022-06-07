@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enterFadeDuration="100"
+    android:exitFadeDuration="200">
+
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/status_bar"/>
+            <corners android:radius="40dp"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <solid android:color="@color/default_color"/>
+            <corners android:radius="40dp"/>
+        </shape>
+    </item>
+</selector>

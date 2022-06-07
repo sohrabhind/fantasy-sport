@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:orientation="horizontal"
+        android:background="@color/title_bar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_weight="1">
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/winners"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/toolbar_height"
+            android:text="WINNERS"
+            android:textColor="#FFEB3B"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/news_inside_item_margin"
+            android:paddingRight="@dimen/news_inside_item_margin"
+            android:background="@drawable/item_back"/>
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </androidx.viewpager.widget.ViewPager>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/title_bar"
+        app:tabTextAppearance="@style/TabTextStyle"
+        app:tabIndicatorColor="#FFFFFF"
+        app:tabSelectedTextColor="#FFFFFF"
+        app:tabTextColor="#c5c5c5"
+        app:tabMode="fixed">
+    </com.google.android.material.tabs.TabLayout>
+
+</LinearLayout>

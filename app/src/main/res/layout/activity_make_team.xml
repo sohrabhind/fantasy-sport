@@ -1,0 +1,385 @@
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@color/title_bar"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/news_item_margin"
+                    android:text="BATTERS"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/news_item_margin"
+                    android:text="(1 RUN = 1 POINT)"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/news_inside_item_margin"
+                android:layout_marginRight="@dimen/news_inside_item_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/default_color"
+                    android:layout_margin="@dimen/player_item_margin">
+
+                    <Spinner
+                        android:id="@+id/batsman1"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/player_item_margin"
+                        android:paddingLeft="@dimen/news_image_margin_top"
+                        android:paddingRight="@dimen/news_image_margin_top" />
+
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="@dimen/player_item_margin"
+                        app:srcCompat="@drawable/sixx"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/default_color"
+                    android:layout_margin="@dimen/player_item_margin">
+
+                    <Spinner
+                        android:id="@+id/batsman2"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/player_item_margin"
+                        android:paddingLeft="@dimen/news_image_margin_top"
+                        android:paddingRight="@dimen/news_image_margin_top"/>
+
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="@dimen/player_item_margin"
+                        app:srcCompat="@drawable/fivex"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/default_color"
+                    android:layout_margin="@dimen/player_item_margin">
+
+                    <Spinner
+                        android:id="@+id/batsman3"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/player_item_margin"
+                        android:paddingLeft="@dimen/news_image_margin_top"
+                        android:paddingRight="@dimen/news_image_margin_top"/>
+
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="@dimen/player_item_margin"
+                        app:srcCompat="@drawable/fourx"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/default_color"
+                    android:layout_margin="@dimen/player_item_margin">
+
+                    <Spinner
+                        android:id="@+id/batsman4"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/player_item_margin"
+                        android:paddingLeft="@dimen/news_image_margin_top"
+                        android:paddingRight="@dimen/news_image_margin_top" />
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="@dimen/player_item_margin"
+                        app:srcCompat="@drawable/threex"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/default_color"
+                    android:layout_margin="@dimen/player_item_margin">
+                    <Spinner
+                        android:id="@+id/batsman5"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/player_item_margin"
+                        android:paddingLeft="@dimen/news_image_margin_top"
+                        android:paddingRight="@dimen/news_image_margin_top" />
+
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="@dimen/player_item_margin"
+                        app:srcCompat="@drawable/twox"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/default_color"
+                    android:layout_margin="@dimen/player_item_margin">
+
+
+                    <Spinner
+                        android:id="@+id/batsman6"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/player_item_margin"
+                        android:paddingLeft="@dimen/news_image_margin_top"
+                        android:paddingRight="@dimen/news_image_margin_top" />
+
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="@dimen/player_item_margin"
+                        app:srcCompat="@drawable/onex"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/news_item_margin"
+                    android:text="BOWLERS"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/news_item_margin"
+                    android:text="(1 WICKET = 20 POINTS)"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/news_inside_item_margin"
+                android:layout_marginRight="@dimen/news_inside_item_margin">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/default_color"
+                    android:layout_margin="@dimen/player_item_margin">
+
+                    <Spinner
+                        android:id="@+id/bowler1"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/player_item_margin"
+                        android:paddingLeft="@dimen/news_image_margin_top"
+                        android:paddingRight="@dimen/news_image_margin_top" />
+
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="@dimen/player_item_margin"
+                        app:srcCompat="@drawable/fivex"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/default_color"
+                    android:layout_margin="@dimen/player_item_margin">
+
+                    <Spinner
+                        android:id="@+id/bowler2"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/player_item_margin"
+                        android:paddingLeft="@dimen/news_image_margin_top"
+                        android:paddingRight="@dimen/news_image_margin_top" />
+
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="@dimen/player_item_margin"
+                        app:srcCompat="@drawable/fourx"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/default_color"
+                    android:layout_margin="@dimen/player_item_margin">
+
+
+                    <Spinner
+                        android:id="@+id/bowler3"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/player_item_margin"
+                        android:paddingLeft="@dimen/news_image_margin_top"
+                        android:paddingRight="@dimen/news_image_margin_top" />
+
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="@dimen/player_item_margin"
+                        app:srcCompat="@drawable/threex"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/default_color"
+                    android:layout_margin="@dimen/player_item_margin">
+                    <Spinner
+                        android:id="@+id/bowler4"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/player_item_margin"
+                        android:paddingLeft="@dimen/news_image_margin_top"
+                        android:paddingRight="@dimen/news_image_margin_top"/>
+
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="@dimen/player_item_margin"
+                        app:srcCompat="@drawable/twox"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/default_color"
+                    android:layout_margin="@dimen/player_item_margin">
+                    <Spinner
+                        android:id="@+id/bowler5"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/player_item_margin"
+                        android:paddingLeft="@dimen/news_image_margin_top"
+                        android:paddingRight="@dimen/news_image_margin_top"/>
+
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="@dimen/player_item_margin"
+                        app:srcCompat="@drawable/onex"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:maxLines="1"
+                android:text="Submit"
+                android:layout_margin="@dimen/news_item_margin"
+                android:layout_marginLeft="@dimen/toolbar_height"
+                android:layout_marginRight="@dimen/toolbar_height"
+                android:layout_marginBottom="@dimen/toolbar_height"
+                android:paddingLeft="@dimen/news_image_margin_top"
+                android:paddingRight="@dimen/news_image_margin_top"
+                android:background="@drawable/item_back_list" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

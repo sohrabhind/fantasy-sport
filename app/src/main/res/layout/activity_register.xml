@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/news_inside_item_margin"
+    android:onClick="hideKeyboard"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:gravity="center"
+        android:text="REDFUN"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/textLogin"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <EditText
+            android:id="@+id/regNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/edit_text_back"
+            android:hint="Name"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="textVisiblePassword"
+            android:imeOptions="flagNoExtractUi"
+            android:textCursorDrawable="@color/color_edit_text"
+            android:singleLine="true"
+            android:textColor="@color/color_edit_text"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/regIdEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/edit_text_back"
+            android:hint="@string/hint_login_id"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="number"
+            android:imeOptions="flagNoExtractUi"
+            android:textCursorDrawable="@color/color_edit_text"
+            android:singleLine="true"
+            android:textColor="@color/color_edit_text"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/passEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/edit_text_back"
+            android:hint="Password"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="textPassword"
+            android:imeOptions="flagNoExtractUi"
+            android:textCursorDrawable="@color/color_edit_text"
+            android:singleLine="true"
+            android:textColor="@color/color_edit_text"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/verifyPassEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/edit_text_back"
+            android:hint="Verify Password"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="textPassword"
+            android:imeOptions="flagNoExtractUi"
+            android:textCursorDrawable="@color/color_edit_text"
+            android:singleLine="true"
+            android:textColor="@color/color_edit_text"
+            android:textColorHint="@color/white" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/item_back_list"
+            android:text="Register"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

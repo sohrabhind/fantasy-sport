@@ -1,0 +1,65 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@color/title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/news_inside_item_margin">
+
+        <Button
+            android:id="@+id/myTeamButton"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/item_back_list"
+            android:text="Make Team"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/myPointsButton"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/item_back_list"
+            android:text="My Team"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/rankButton"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/item_back_list"
+            android:text="Leaderboard"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/winnersButton"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+</LinearLayout>

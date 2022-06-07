@@ -1,0 +1,593 @@
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@color/title_bar"/>
+
+
+    <com.hindbyte.redfun.library.SwipyRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srl_direction="top">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/news_item_margin"
+                    android:text="BATTERS"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/news_inside_item_margin"
+                    android:layout_marginRight="@dimen/news_inside_item_margin">
+
+                    <LinearLayout
+                        android:id="@+id/player1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/item_no_round"
+                        android:layout_margin="@dimen/player_item_margin">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="@dimen/news_image_margin_top">
+
+                            <TextView
+                                android:id="@+id/batsman1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:maxLines="1"
+                                android:textColor="@color/white"/>
+
+                            <TextView
+                                android:id="@+id/batsman1Points"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                                android:textSize="15sp"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"/>
+
+
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="@dimen/player_item_margin"
+                            app:srcCompat="@drawable/sixx"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/player2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/item_no_round"
+                        android:layout_margin="@dimen/player_item_margin">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="@dimen/news_image_margin_top">
+
+                            <TextView
+                                android:id="@+id/batsman2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:maxLines="1"
+                                android:textColor="@color/white"/>
+
+                            <TextView
+                                android:id="@+id/batsman2Points"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                                android:textSize="15sp"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"/>
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="@dimen/player_item_margin"
+                            app:srcCompat="@drawable/fivex"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/player3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/item_no_round"
+                        android:layout_margin="@dimen/player_item_margin">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="@dimen/news_image_margin_top">
+
+                            <TextView
+                                android:id="@+id/batsman3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:maxLines="1"
+                                android:textColor="@color/white"/>
+
+                            <TextView
+                                android:id="@+id/batsman3Points"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                                android:textSize="15sp"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"/>
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="@dimen/player_item_margin"
+                            app:srcCompat="@drawable/fourx"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/player4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/item_no_round"
+                        android:layout_margin="@dimen/player_item_margin">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="@dimen/news_image_margin_top">
+
+                            <TextView
+                                android:id="@+id/batsman4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:maxLines="1"
+                                android:textColor="@color/white"/>
+
+                            <TextView
+                                android:id="@+id/batsman4Points"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                                android:textSize="15sp"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="@dimen/player_item_margin"
+                            app:srcCompat="@drawable/threex"
+                            android:layout_gravity="center"
+                            android:contentDescription="@null" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/player5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/item_no_round"
+                        android:layout_margin="@dimen/player_item_margin">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="@dimen/news_image_margin_top">
+
+                            <TextView
+                                android:id="@+id/batsman5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:maxLines="1"
+                                android:textColor="@color/white"/>
+
+                            <TextView
+                                android:id="@+id/batsman5Points"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                                android:textSize="15sp"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"/>
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="@dimen/player_item_margin"
+                            app:srcCompat="@drawable/twox"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/player6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/item_no_round"
+                        android:layout_margin="@dimen/player_item_margin">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="@dimen/news_image_margin_top">
+
+                            <TextView
+                                android:id="@+id/batsman6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:maxLines="1"
+                                android:textColor="@color/white"/>
+
+                            <TextView
+                                android:id="@+id/batsman6Points"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                                android:textSize="15sp"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"/>
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="@dimen/player_item_margin"
+                            app:srcCompat="@drawable/onex"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/news_item_margin"
+                    android:text="BOWLERS"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/news_inside_item_margin"
+                    android:layout_marginRight="@dimen/news_inside_item_margin">
+
+
+                    <LinearLayout
+                        android:id="@+id/player7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/item_no_round"
+                        android:layout_margin="@dimen/player_item_margin">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="@dimen/news_image_margin_top">
+
+                            <TextView
+                                android:id="@+id/bowler1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:maxLines="1"
+                                android:textColor="@color/white"/>
+
+                            <TextView
+                                android:id="@+id/bowler1Points"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                                android:textSize="15sp"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"/>
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="@dimen/player_item_margin"
+                            app:srcCompat="@drawable/fivex"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/player8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/item_no_round"
+                        android:layout_margin="@dimen/player_item_margin">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="@dimen/news_image_margin_top">
+
+                            <TextView
+                                android:id="@+id/bowler2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:maxLines="1"
+                                android:textColor="@color/white"/>
+
+                            <TextView
+                                android:id="@+id/bowler2Points"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                                android:textSize="15sp"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"/>
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="@dimen/player_item_margin"
+                            app:srcCompat="@drawable/fourx"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/player9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/item_no_round"
+                        android:layout_margin="@dimen/player_item_margin">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="@dimen/news_image_margin_top">
+
+                            <TextView
+                                android:id="@+id/bowler3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:maxLines="1"
+                                android:textColor="@color/white"/>
+
+                            <TextView
+                                android:id="@+id/bowler3Points"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                                android:textSize="15sp"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="@dimen/player_item_margin"
+                            app:srcCompat="@drawable/threex"
+                            android:layout_gravity="center"
+                            android:contentDescription="@null" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/player10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/item_no_round"
+                        android:layout_margin="@dimen/player_item_margin">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="@dimen/news_image_margin_top">
+
+                            <TextView
+                                android:id="@+id/bowler4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:maxLines="1"
+                                android:textColor="@color/white"/>
+
+                            <TextView
+                                android:id="@+id/bowler4Points"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                                android:textSize="15sp"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"/>
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="@dimen/player_item_margin"
+                            app:srcCompat="@drawable/twox"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/player11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/item_no_round"
+                        android:layout_margin="@dimen/player_item_margin">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="@dimen/news_image_margin_top">
+
+                            <TextView
+                                android:id="@+id/bowler5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:maxLines="1"
+                                android:textColor="@color/white"/>
+
+                            <TextView
+                                android:id="@+id/bowler5Points"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                                android:textSize="15sp"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"/>
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="@dimen/player_item_margin"
+                            app:srcCompat="@drawable/onex"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </com.hindbyte.redfun.library.SwipyRefreshLayout>
+
+</LinearLayout>
