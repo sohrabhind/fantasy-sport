@@ -2,7 +2,7 @@
 Redfun is a fantasy sport platform where users can participate in tournaments and create their own teams. This platform is a safe and secure fantasy sport app where you can play for cash and win real money credited directly to your bank account. Fantasy sport platform, Redfun gives you real time match score updates right on the app. It allows users to play fantasy cricket and check scores as the match plays on.
 
 
-####This Application Have Following Features:
+#This Application Have Following Features:
 
 It allows users to register with email.
 
